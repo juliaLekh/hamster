@@ -15,7 +15,7 @@ input {
     display: none;
 }
         
-label:before {
+label::before {
     content: "";
     display: inline-block;               
     width: 16px;
@@ -28,7 +28,7 @@ label:before {
     border:#EEEEEE 1px solid;
 }
 
-input:checked + label:before {
+input:checked + label::before {
     content: " \2022";
     color: #fff;
     font-size: 35px;
